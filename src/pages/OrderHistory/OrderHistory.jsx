@@ -65,7 +65,7 @@ const OrderHistory = () => {
                     {orders.map(order => (
                         <tr key={order.orderId}>
                             <td>{order.orderId}</td>
-                            <td>{order.CustomerName} <br/>
+                            <td>{order.customerName} <br/>
                                 <small className='text-mutes'>{order.phoneNumber}</small>
                             </td>
                             <td>{formatItems(order.cartItems)}</td>
